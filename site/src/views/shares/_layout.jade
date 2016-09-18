@@ -1,0 +1,26 @@
+include ../helpers/viewhelper
+
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title= page.title
+    if page.kw
+        meta(name="keyword",content="#{page.kw}")
+    if page.des
+        meta(name="description",content="#{page.des}")
+    //- 头部块
+    +css("global")
+    block head
+body
+    //- 内容块
+    block content
+    .footer footer
+    //- 脚本引用块
+    +js("lib/linq")
+    +js("lib/jquery.min")
+    +js("lib/react.min")
+    +js("lib/react-dom.min")
+    +js("lib/vue.min")
+    +js("global")
+    block script

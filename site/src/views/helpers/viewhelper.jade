@@ -1,0 +1,8 @@
+- ver = "0.0.1"
+//- 引用js文件
+mixin js(src)
+    script(src="/js/#{src}.js?v=#{ver}")
+
+//- 引用css文件
+mixin css(src)
+    link(href="/css/#{src}.css?v=#{ver}", rel="stylesheet")

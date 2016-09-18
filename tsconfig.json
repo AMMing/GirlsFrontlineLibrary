@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "removeComments": false,
+        "sourceMap": false,
+        "outDir": "site",
+        "jsx": "react"
+    },
+    "files": [
+        "site/gulpfile.ts"
+    ]
+}
